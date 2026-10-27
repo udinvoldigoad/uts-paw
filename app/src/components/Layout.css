@@ -105,3 +105,24 @@
     grid-template-columns: 1fr;
   }
 }
+
+#navigasi-utama a {
+  padding: 0.25rem 0.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: inherit;
+}
+
+#navigasi-utama a:hover { 
+    background: #e7e9ee; 
+}
+
+#daftar-buku .kartu:hover { 
+    border-color: #1f2328; 
+}
+
+#form-tambah input:focus,
+#form-tambah select:focus { 
+    outline: 2px solid #1f2328; 
+    outline-offset: 1px; 
+}
