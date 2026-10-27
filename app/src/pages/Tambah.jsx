@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import useKoleksi from '../hooks/useKoleksi.js'
 import './Tambah.css'
 
-const AWAL = { judul: '', kategori: '', penulis: '', tahunTerbit: '', status: '' }
+const AWAL = { judul: '', kategori: 'Sastra Indonesia', penulis: '', tahunTerbit: '', status: 'Dimiliki' }
 
 export default function Tambah() {  
     const { tambah } = useKoleksi()
@@ -24,7 +24,7 @@ export default function Tambah() {
     }
     
     return (
-        <form className="formulir" onSubmit={simpan} noValidate>
+        <form id="form-tambah" className="formulir" onSubmit={simpan} noValidate>
             <h1>Tambah Buku</h1>
 
             <label htmlFor="judul">Judul</label>
