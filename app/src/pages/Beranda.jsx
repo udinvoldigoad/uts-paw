@@ -8,7 +8,7 @@ export default function Beranda() {
 
     return (
         <section>
-            <h1>Rak Buku Pribadi</h1>
+            <h1>Selamat datang di Rak Buku Pribadi</h1>
             <p>Tema: {mahasiswa.tema}</p>
             {loading ? (
                 <p>Memuat ringkasan...</p>
@@ -17,7 +17,7 @@ export default function Beranda() {
                     Ada {items.length} Buku dalam {jumlahKategori} kategori.
                 </p>
             )}
-            <Link to="/koleksi">Lihat semua buku</Link>
+            <Link to="/koleksi" className="btn-koleksi">Lihat semua buku</Link>
         </section>
     )
 }

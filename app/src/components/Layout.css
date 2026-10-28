@@ -9,6 +9,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
+  background: #8c0721;
+  color: #e7e9ee;
 }
 
 .menu {
@@ -28,11 +30,28 @@
   padding: 1.5rem;
 }
 
+.btn-koleksi {
+  display: inline-block; 
+  padding: 10px 20px; 
+  border-radius: 6px; 
+  border: 1px solid #8c0721; 
+  color: #8c0721; 
+  text-decoration: none; 
+}
+
+.btn-koleksi:hover {
+  background-color: #8c0721;
+  color: white;
+}
+
 .kaki {
   padding: 1rem 1.5rem;
   border-top: 1px solid #dcdcdc;
-  color: #57606a;
+  color: #495460;
   font-size: 0.9rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .aksi {
@@ -108,11 +127,12 @@
   padding: 0.25rem 0.5rem;
   border-radius: 6px;
   text-decoration: none;
-  color: inherit;
+  color: #e7e9ee;
 }
 
 #navigasi-utama a:hover { 
     background: #e7e9ee; 
+    color: #8c0721;
 }
 
 #daftar-buku .kartu:hover { 
