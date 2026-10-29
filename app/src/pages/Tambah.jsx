@@ -6,11 +6,15 @@ import './Tambah.css'
 const AWAL = { judul: '', kategori: 'Sastra Indonesia', penulis: '', tahunTerbit: '', status: 'Dimiliki' }
 
 export default function Tambah() {  
-    const { tambah } = useKoleksi()
+    const konteks = useKoleksi()
+    const { tambah } = konteks
+    
+    const daftarBuku = Object.values(konteks).find(Array.isArray) || []
+
     const navigate = useNavigate()
     const [form, setForm] = useState(AWAL)
     const [galat, setGalat] = useState('')
-
+    
     const ubah = (e) => setForm({ ...form, [e.target.name]: e.target.value })
 
     const simpan = (e) => {
@@ -55,7 +59,14 @@ export default function Tambah() {
             </select>
 
             <button type="submit">Simpan</button>
-            <p>Isi state saat ini: {JSON.stringify(form)}</p>
+                <p>
+                    <strong>Isi state form saat ini</strong>{"\n"}
+                    {JSON.stringify(form, null, 2)}{"\n\n"}
+                    <strong>Item tersimpan ({daftarBuku.length})</strong>{"\n"}
+                    {daftarBuku.length === 0 
+                        ? "Belum ada. Di aplikasimu, setelah Simpan kamu dipindahkan ke /koleksi." 
+                        : `Sudah ada ${daftarBuku.length} buku di dalam koleksi.`}
+                </p>
         </form>
   )
 }
