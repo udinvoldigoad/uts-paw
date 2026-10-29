@@ -9,7 +9,7 @@
 | **NIM** | 124140090 |
 | **Kelas** | RA |
 | **Tema** | Rak Buku Pribadi |
-| **Deployment** | https://github.com/udinvoldigoad/uts-paw.git |
+| **Deployment** | https://udinvoldigoad.github.io/uts-paw/ |
 
 ---
 
