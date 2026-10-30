@@ -6,7 +6,7 @@ export default function Layout() {
   return (
     <div className="kerangka">
       <header className="kepala">
-        <strong>Rak Buku Pribadi</strong>
+        <strong>Belwis Suka Baca</strong>
         <Navigasi />
       </header>
       <main className="isi">

@@ -1,7 +1,7 @@
 # Ujian Tengah Semester IF25-22014 Pengembangan Aplikasi Web
 
 
-# Rak Buku Pribadi
+# Belwis Suka Baca
 
 | Informasi | Detail |
 | :--- | :--- |
